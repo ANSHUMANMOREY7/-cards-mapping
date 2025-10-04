@@ -25,3 +25,15 @@
     margin: 4px;
     
 }
+.card-head{
+    padding: 2px 7px;
+    text-align: center;
+    font-size: 29px;
+}
+.card-data{
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    padding: 2px;
+    font-size: 15px;
+}

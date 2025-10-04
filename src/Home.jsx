@@ -1,4 +1,5 @@
 import "./Home.css"
+import { IdCard } from 'lucide-react';
 
 const students = [{ name: "anshuman", age: 20, gender: "male", city: "pune", id: 1 },
 { name: "ankit", age: 22, gender: "male", city: "mumbai", id: 2 },
@@ -20,7 +21,7 @@ function Home() {
                 return (
                     <div className="card-container">
                         <h2 className="card-head">{name}</h2>
-                        <p className="card-data">{id}</p>
+                        <p className="card-data"> <IdCard /> {id}</p>
                         <p className="card-data">{age}</p>
                         <p className="card-data">{city}</p>
                         <p className="card-data">{gender}</p>
