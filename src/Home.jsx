@@ -17,7 +17,11 @@ function Home() {
           {students.map((obj)=>{
             return(
                 <div>
-                <p>{obj.name}</p>
+                <h2>{obj.name}</h2>
+                <p>{obj.id}</p>
+                <p>{obj.age}</p>
+                <p>{obj.city}</p>
+                <p>{obj.gender}</p>
                 </div>
             )
           })}
