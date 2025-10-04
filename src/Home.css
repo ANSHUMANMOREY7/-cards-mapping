@@ -37,3 +37,8 @@
     padding: 2px;
     font-size: 15px;
 }
+.lucide-icon{
+    padding-right: 5px ;
+    display: flex;
+    align-items: center;
+}
