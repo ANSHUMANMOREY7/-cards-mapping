@@ -13,18 +13,20 @@ const students = [{ name: "anshuman", age: 20, gender: "male", city: "pune", id:
 function Home() {
     return (
         <div>
-          <h1>students list</h1>
-          {students.map((obj)=>{
-            return(
-                <div>
-                <h2>{obj.name}</h2>
-                <p>{obj.id}</p>
-                <p>{obj.age}</p>
-                <p>{obj.city}</p>
-                <p>{obj.gender}</p>
-                </div>
-            )
-          })}
+            <h1 className="main-head">students list</h1>
+            {students.map((obj) => {
+                const { name, id, age, city, gender } = obj;
+                return (
+                    <div className="card-container">
+                        <h2 className="card-head">{name}</h2>
+                        <p className="card-data">{id}</p>
+                        <p className="card-data">{age}</p>
+                        <p className="card-data">{city}</p>
+                        <p className="card-data">{gender}</p>
+
+                    </div>
+                )
+            })}
         </div>
     )
 }
