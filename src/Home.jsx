@@ -24,7 +24,7 @@ function Home() {
                 const { name, id, job, city, gender } = obj;
                 return (
                     
-                    <div className="card-container" key={id}>
+                    <div className="card-container">
                         <h2 className="card-head">{name}</h2>
                         <p className="card-data"> <span className="lucide-icon"><IdCard /></span> {id}</p>
                         <p className="card-data"> <span className="lucide-icon"><UserPen/></span> {job}</p>
