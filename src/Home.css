@@ -28,16 +28,22 @@
 }
 .card-container{
     padding: 20px;
-    border: 1px solid white;
+    border: 1px solid transparent;
     height: fit-content;
     width: 210px;
     border-radius: 10px;
     margin: 4px;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-    
-    
+    cursor: pointer;
+    transition: 32ms;
+}
+.card-container:hover{
+    background-color: rgb(160, 156, 156);
+    border: 1px solid  rgb(143, 136, 136);
+    box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+
 }
 .card-head{
     padding: 2px 7px;
