@@ -3,6 +3,7 @@ import { IdCard } from 'lucide-react';
 import { MapPin } from 'lucide-react';
 import { UserPen } from 'lucide-react';
 import { Mars } from 'lucide-react';
+import { Venus } from 'lucide-react';
 
 const students = [{ name: "anshuman", job: "Frontend Developer", gender: "male", city: "pune", id: 1 },
 { name: "ankit", job: "Data Analyst", gender: "male", city: "mumbai", id: 2 },
@@ -22,14 +23,16 @@ function Home() {
             {students.map((obj) => {
                 const { name, id, job, city, gender } = obj;
                 return (
+                    
                     <div className="card-container" key={id}>
                         <h2 className="card-head">{name}</h2>
                         <p className="card-data"> <span className="lucide-icon"><IdCard /></span> {id}</p>
                         <p className="card-data"> <span className="lucide-icon"><UserPen/></span> {job}</p>
-                        <p className="card-data"><span className="lucide-react"><Mars/> </span>{gender}</p>
+                        <p className="card-data">  {gender == "male" ? <p className="lucide-icon"><Mars/></p> : <p className="lucide-icon"><Venus/></p>} {gender == "male" ? "Male" : "Female"} </p>
                         <p className="card-data"><span className="lucide-react"><MapPin/></span>{city}</p>
-
+                        
                     </div>
+                
                 )
             })}
             </div>
