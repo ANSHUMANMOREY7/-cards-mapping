@@ -12,8 +12,9 @@ const students = [{ name: "anshuman", age: 20, gender: "male", city: "pune", id:
 { name: "raj  ", age: 20, gender: "male", city: "bangalore", id: 10 }];
 function Home() {
     return (
-        <div>
-            <h1 className="main-head">students list</h1>
+        <div >
+            <h1 className="main-head">Students List</h1>
+            <div className="container">
             {students.map((obj) => {
                 const { name, id, age, city, gender } = obj;
                 return (
@@ -27,6 +28,7 @@ function Home() {
                     </div>
                 )
             })}
+            </div>
         </div>
     )
 }
