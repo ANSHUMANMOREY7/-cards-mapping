@@ -1,6 +1,8 @@
 import "./Home.css"
 import { IdCard } from 'lucide-react';
 import { MapPin } from 'lucide-react';
+import { UserPen } from 'lucide-react';
+import { Mars } from 'lucide-react';
 
 const students = [{ name: "anshuman", job: "Frontend Developer", gender: "male", city: "pune", id: 1 },
 { name: "ankit", job: "Data Analyst", gender: "male", city: "mumbai", id: 2 },
@@ -22,10 +24,10 @@ function Home() {
                 return (
                     <div className="card-container" key={id}>
                         <h2 className="card-head">{name}</h2>
-                        <p className="card-data"> <span className="lucide-icon"><IdCard /></span>= {id}</p>
-                        <p className="card-data"> {job}</p>
-                        <p className="card-data"><MapPin/>{city}</p>
-                        <p className="card-data">{gender}</p>
+                        <p className="card-data"> <span className="lucide-icon"><IdCard /></span> {id}</p>
+                        <p className="card-data"> <span className="lucide-icon"><UserPen/></span> {job}</p>
+                        <p className="card-data"><span className="lucide-react"><Mars/> </span>{gender}</p>
+                        <p className="card-data"><span className="lucide-react"><MapPin/></span>{city}</p>
 
                     </div>
                 )

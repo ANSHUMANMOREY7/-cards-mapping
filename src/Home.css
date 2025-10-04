@@ -20,14 +20,14 @@
     padding: 20px;
     border: 1px solid black;
     height: fit-content;
-    width: 180px;
+    width: 210px;
     border-radius: 10px;
     margin: 4px;
     
 }
 .card-head{
     padding: 2px 7px;
-    text-align: center;
+    text-align: left;
     font-size: 29px;
 }
 .card-data{
